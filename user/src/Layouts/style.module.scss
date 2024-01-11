@@ -1,0 +1,49 @@
+.container {
+  min-height: 100vh;
+
+  .siderContainer {
+    height: 100vh;
+    // height: calc(100vh - 145px);
+    overflow: auto;
+  }
+}
+
+.payrollPage {
+  section {
+    background-color: #FAFAFA;
+
+    main {
+      background-color: #FAFAFA;
+      border: none;
+
+      &>div {
+        box-shadow: none;
+        background-color: #FAFAFA;
+      }
+
+    }
+  }
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: rgba(255, 255, 255, 0.2);
+  // color: #fff;
+}
+
+.bottom {
+  // height: 32px;
+  // margin: 0px;
+  // background: rgba(255, 255, 255, 0.2);
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+}
+
+.button {
+  color: #ffffffa6;
+}

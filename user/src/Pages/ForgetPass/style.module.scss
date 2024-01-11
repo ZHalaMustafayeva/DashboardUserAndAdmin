@@ -1,0 +1,21 @@
+.loginRow {
+    padding: 15px;
+    max-width: 500px;
+    margin: 150px auto;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    padding: 32px;
+    box-shadow: 0px 0px 2px 0px rgba(22, 22, 22, 0.1);
+}
+
+.loginBtn {
+    border-radius: 6px !important;
+    background: #23A4DD !important;
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height: 48px;
+}

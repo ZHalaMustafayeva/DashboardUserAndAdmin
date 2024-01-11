@@ -1,0 +1,13 @@
+.container {
+  margin: 0 25px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FFF;
+}
+
+.content {
+  height: calc(100vh - 155px);
+  overflow: auto;
+  border-radius: 6px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+}/*# sourceMappingURL=style.module.css.map */

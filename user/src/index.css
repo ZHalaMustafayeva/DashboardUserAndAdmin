@@ -1,0 +1,289 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./Assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  margin: 0;
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px #5787d2; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e3ea;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d6d6da !important;
+}
+
+
+
+@media print {
+  .menu.menuBar {
+    display: none;
+  }
+}
+
+/* .ant-modal-body {
+  height: 600px !important;
+  overflow: scroll !important;
+} */
+@media only screen and (min-width: 1789px) {
+  .hideBtnin1790 {
+    display: flex !important;
+  }
+
+  .showDropdownin1970 {
+    display: none !important;
+  }
+
+  /* showDropdownin1970 */
+}
+
+@media only screen and (max-width: 1790px) {
+  .hideBtnin1790 {
+    display: none !important;
+  }
+
+  .showDropdownin1970 {
+    margin-top: "4px !important ";
+    display: block !important;
+  }
+}
+
+.ant-menu-submenu-popup {
+  border-radius: 0 !important;
+
+  .ant-menu-sub {
+    border-radius: 12px !important;
+  }
+
+  .ant-menu-item {
+    margin: 0 !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+
+    .ant-menu-title-content {
+      color: #505050;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 175%;
+
+    }
+
+    .ant-menu-item-icon {
+      display: none !important;
+    }
+
+    border-bottom: 1px solid #DDE6ED;
+
+    .ant-menu-title-content {
+      color: #505050;
+    }
+  }
+
+  .ant-menu-item-selected {
+    .ant-menu-title-content {
+      color: #fff;
+    }
+
+    border-radius: 0 !important;
+    color: #fff !important;
+    background-color: #23A4DD !important;
+
+    svg {
+      display: none !important;
+    }
+  }
+}
+
+
+
+.ant-select:focus-within {
+  border: none !important;
+}
+
+.ant-select:focus-within {
+  outline: 2px solid #23A4DD !important;
+  border-radius: 6px;
+  border: none;
+}
+
+
+
+.ant-select-item-option {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 0;
+}
+
+.ant-select-item.ant-select-dropdown {
+  padding: 0;
+  border-radius: 0;
+}
+
+
+.ant-select-dropdown {
+  padding: 0;
+
+  .ant-select-item {
+    border-radius: 0;
+  }
+}
+
+.ant-checkbox {
+  .ant-checkbox-inner {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 2px;
+
+  }
+}
+
+
+.ant-picker:focus-within {
+  /* background-color: red !important; */
+  outline: 2px solid #23A4DD !important;
+}
+
+
+
+.ant-input-number:focus-within {
+  border: 2px solid #23A4DD;
+}
+
+.ant-input {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: black !important;
+}
+
+.ant-picker.ant-picker-input {
+  font-weight: 400 !important;
+  font-family: "Montserrat", "sans-serif" !important;
+  font-size: 16px !important;
+  color: black !important
+}
+
+/* .ant-input-disabled {
+  background-color: #F1F1F1 !important
+} */
+
+.ant-popover-inner {
+  padding: 0px !important;
+}
+
+.ant-popover-inner-content {
+  /* font-family: "Montserrat", "sans-serif" !important;
+  display: flex !important;
+  align-items: center !important; */
+  /* width: 300px !important;
+  height: 158px !important; */
+}
+
+.ant-popconfirm-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ant-popconfirm-message {
+  padding-bottom: 10px;
+  padding-left: 22px !important;
+}
+
+.ant-popconfirm-buttons {
+  padding-right: 20px !important;
+}
+
+.custom-ok-button {
+  background-color: red;
+  color: white;
+  width: 130px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600
+}
+
+.custom-cancel-button {
+  background-color: transparent;
+  width: 130px;
+  height: 36px !important;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none !important;
+  /* border: "none";  */
+  color: #A4A4A4;
+}
+
+
+.ant-btn-default.custom-cancel-button:hover {
+  background-color: #F9F9F9 !important;
+  color: #A4A4A4;
+  border: none;
+}
+
+.ant-btn-default.custom-ok-button:hover {
+  background-color: red !important;
+  color: #A4A4A4;
+  border: none;
+}
+
+.custom-cancel-button.ant-btn {
+  background-color: transparent;
+  color: #A4A4A4;
+  height: 36px !important;
+  /* Set the desired height for the OK button */
+  /* Center the text vertically within the button */
+}
+
+.custom-ok-button.ant-btn:hover {
+  background-color: red !important;
+  color: #FFFFFF;
+  box-shadow: 4px 4px 30px 0px rgba(22, 22, 22, 0.10);
+}
+
+.ant-collapse {
+  border: none !important;
+}
+
+.ant-collapse>.ant-collapse-item {
+  border-bottom: none !important;
+}
+
+.ant-collapse .ant-collapse-content {
+  border-top: none !important;
+}

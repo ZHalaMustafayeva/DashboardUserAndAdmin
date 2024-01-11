@@ -1,0 +1,23 @@
+
+.ant-dropdown {
+  height: 48px;
+  max-height: 400px !important;
+}
+.ant-dropdown-menu{
+  padding: 0 !important;
+}
+.ant-dropdown-menu-item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  // border-radius: 0 !important;
+  background: #fff !important;
+  // padding: 10px 80px 10px 24px !important;
+}
+.ant-dropdown-menu-item{
+    // border-radius: 0 !important;
+    background: #ffff !important;
+    // padding: 10px 80px 10px 24px !important; 
+    &:hover{
+      background: #f7f4f4 !important;
+    }
+}
+

@@ -1,0 +1,13 @@
+.container {
+    width: 300px;
+    height: 400px;
+    background-color: red;
+
+}
+
+.google {
+
+    &:hover {
+        background-color: blue;
+    }
+}

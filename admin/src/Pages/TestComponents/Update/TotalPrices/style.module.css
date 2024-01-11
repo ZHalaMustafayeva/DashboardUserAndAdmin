@@ -1,0 +1,20 @@
+.some, .cardParent {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.cardParent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.justifyBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardDesign {
+  width: 350px;
+  background-color: lightgray;
+}/*# sourceMappingURL=style.module.css.map */

@@ -1,0 +1,144 @@
+.c-table {
+   width: 100%;
+
+   thead {
+
+      tr {
+         .ant-table-column-has-sorters::before {
+            width: 0 !important;
+         }
+
+         .ant-table-cell::before {
+            width: 0 !important;
+         }
+
+         .ant-table-cell-scrollbar {
+            background-color: #fcfcfc !important;
+         }
+
+         .ant-table-filter-column,
+         .ant-table-column-has-sorters {
+            justify-content: center;
+            align-items: center;
+
+         }
+
+         // this css especially and only for contract table
+         .style_firstTitle__1+OyM {
+            .ant-table-filter-column {
+               justify-content: start !important;
+            }
+         }
+
+         .ant-table-column-sorters {
+            gap: 1rem;
+         }
+
+         >td,
+         >th {
+            // background-color: $table-head-bg !important;
+            height: 60px;
+
+            .ant-table-column-title,
+            .ant-typography {
+               color: #505050 !important;
+               font-size: 16px !important;
+               font-family: Montserrat !important;
+               font-weight: 600;
+               flex: unset;
+            }
+
+            .ant-table-cell,
+            .ant-typography {
+               font-family: Montserrat !important;
+            }
+
+            &.ant-table-column-sort {
+
+               .ant-table-column-title,
+               .ant-typography {
+                  color: $primary !important;
+
+               }
+            }
+
+         }
+      }
+   }
+
+   tbody {
+
+      tr {
+         >td {
+            padding: $table-header-cell-padding;
+            background-color: $table-head-bg !important;
+
+            color: #505050 !important;
+            font-size: 16px !important;
+            font-family: Montserrat !important;
+            font-weight: 400;
+
+            &.ant-table-column-sort {
+
+               .ant-table-column-title,
+               .ant-typography {
+                  color: $primary !important;
+
+               }
+            }
+         }
+      }
+   }
+
+   .ant-table {
+      border: $table-border-width solid $border-color;
+
+      &-footer {
+         padding: 0 !important;
+      }
+   }
+
+   .ant-checkbox {
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+      background: #FFF;
+
+      .ant-checkbox-inner {
+         background-color: transparent;
+         width: 16px;
+         height: 16px;
+      }
+
+      &-inner {
+         background-color: $checkbox-bg-color;
+         border-color: transparent !important;
+         width: $table-checkbox-w;
+         height: $table-checkbox-h;
+      }
+
+      &-checked {
+         .ant-checkbox-inner {
+            background-color: $primary !important;
+
+            //check icon
+            &::after {
+               width: 7px;
+               height: 11px;
+            }
+         }
+      }
+   }
+
+   &-header {
+      padding: $table-header-padding;
+      // border-bottom: $table-border-width solid $border-color;
+   }
+
+   &-row {
+      color: $gray-dark;
+
+      td {
+         padding: $table-cell-padding !important;
+      }
+   }
+}

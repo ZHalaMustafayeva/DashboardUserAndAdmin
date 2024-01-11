@@ -1,0 +1,110 @@
+image: node:latest
+
+stages:
+  - build
+  - development
+  - testing
+  - production
+
+before_script:
+  - mkdir -p /home/webserver/domains/rp.webserver.erp-intel.com/public_html/finance
+  - mkdir -p /home/app/domains/dev.app.erp-intel.com/public_html/finance
+  - mkdir -p /home/app/domains/test.app.erp-intel.com/public_html/finance
+  - mkdir -p /home/app/public_html/finance
+
+
+"Configuration for Manuel App Development":
+  stage: build
+  tags:
+    - erp-frontend-v2
+  only:
+    - test-for-manual-deployment
+  script:
+    - cp .env_test .env
+    - npm i
+    - rm -rf ./build/*
+    - CI=false npm run build
+  artifacts:
+    paths:
+      - ./build
+
+"Configuration for Development App Server":
+  stage: build
+  tags:
+    - erp-frontend-v2
+  only:
+    - development
+  script:
+    - cp .env_dev .env
+    - npm i
+    - rm -rf ./build/*
+    - CI=false npm run build
+  artifacts:
+    paths:
+      - ./build
+
+"Configuration for Testing App Server":
+  stage: build
+  tags:
+    - erp-frontend-v2
+  only:
+    - testing
+  script:
+    - cp .env_test .env
+    - npm i
+    - rm -rf ./build/*
+    - CI=false npm run build
+  artifacts:
+    paths:
+      - ./build
+
+"Configuration for Production App Server":
+  stage: build
+  tags:
+    - erp-frontend-v2
+  only:
+    - production
+  script:
+    - cp .env_prod .env
+    - npm i
+    - rm -rf ./build/*
+    - CI=false npm run build
+  artifacts:
+    paths:
+      - ./build
+
+"Development Publish in Webserver":
+  stage: development
+  tags:
+    - erp-frontend-v2
+  only:
+    - development
+  script:
+    - cp -R ./build/* /home/webserver/domains/rp.webserver.erp-intel.com/public_html/finance
+
+"Development Publish in App Server":
+  stage: development
+  tags:
+    - erp-frontend-v2
+  only:
+    - development
+  script:
+    - cp -R ./build/* /home/app/domains/dev.app.erp-intel.com/public_html/finance
+
+"Testing Publish in App Server":
+  stage: testing
+  tags:
+    - erp-frontend-v2
+  only:
+    - testing
+  script:
+    - cp -R ./build/* /home/app/domains/test.app.erp-intel.com/public_html/finance
+
+"Production Publish in App Server":
+  stage: production
+  tags:
+    - erp-frontend-v2
+  only:
+    - production
+  script:
+    - cp -R ./build/* /home/app/public_html/finance
